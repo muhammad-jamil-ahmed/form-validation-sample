@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+   
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ 
+    <div id="formError"></div>
+    <form id="signupForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <small class="error-message" id="usernameError"></small><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <small class="error-message" id="emailError"></small><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <small class="error-message" id="passwordError"></small><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+        <small class="error-message" id="confirmPasswordError"></small><br>
+
+        <input type="submit" value="Sign Up">
+    </form>
+    <script src="formValidation.js"></script>
+</body>
+</html>
